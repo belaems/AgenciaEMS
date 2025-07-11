@@ -27,7 +27,20 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+h2.titulo {
+  color: #ffffff;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 10px;
+}
+h2.titulo span {
+  color: #3ba1f4;
+}
 
+button:hover {
+  box-shadow: 0 0 8px hsl(207, 91%, 69%);
+  transform: scale(1.05);
+}
 /*ESTILO DO CABEÇALHO*/
 header {
   padding: 40px 4%;
@@ -59,10 +72,7 @@ header nav ul li {
   margin-right: 20px;
 }
 
-.btn-contato button:hover {
-  box-shadow: 0 0 8px hsl(207, 91%, 69%);
-  transform: scale(1.05);
-}
+
 
 /*ESTILO TOPO DO SITE */
 section.topo-do-site {
@@ -133,15 +143,109 @@ section.especialidades .flex {
   text-align: center;
 }
 
-.especialidades h2 {
-  color: #ffffff;
-  font-size: 38px;
-  text-align: center;
-  padding-top: 10px;
-}
-.especialidades h2 span {
-  color: #3ba1f4;
-}
 .especialidades .especialidades-box h3 {
   font-size: 25px;
+}
+
+/*ESTILO DO PORTIFÓLIO*/
+section.portifolio {
+  padding: 40px 4%;
+  color: #ffffff;
+  background-color: black;
+  box-shadow: 0 0 40px 10px #ffffff36;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  box-shadow: 0 0 20px 5px #ffffff33;
+}
+
+section.portifolio .flex {
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+  transition: 18s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #01111fda;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/*SOBRE*/
+section.sobre {
+  padding: 40px 4%;
+}
+section.sobre .flex {
+  align-items: center;
+  gap: 40px;
+}
+.sobre .txt-sobre {
+  color: #000000;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span {
+  color: #3ba1f4;
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.sobre .img-sobre img {
+  width: 360px;
+  height: 500px;
+  border-radius: 40px;
+}
+
+.sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3ba1f4;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 0 5px;
+  transition: .2s;
 }
