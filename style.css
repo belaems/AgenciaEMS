@@ -46,7 +46,8 @@ h2.titulo-black span {
   color: #3ba1f4;
 }
 
-button:hover, form .btn-enviar input[type=submit]:hover {
+button:hover,
+form .btn-enviar input[type="submit"]:hover {
   box-shadow: 0 0 8px hsl(207, 91%, 69%);
   transform: scale(1.05);
 }
@@ -246,7 +247,7 @@ section.sobre .flex {
   border-radius: 40px;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -278,7 +279,7 @@ form {
 form input,
 form textarea {
   width: 100%;
-  background-color: #5a5959;
+  background-color: #adadad;
   border: 0;
   outline: 0;
   padding: 20px 15px;
@@ -298,7 +299,7 @@ form .btn-enviar {
   text-align: center;
 }
 
-form .btn-enviar input[type=submit] {
+form .btn-enviar input[type="submit"] {
   width: 120px;
   background-color: #3ba1f4;
   border: none;
@@ -309,4 +310,40 @@ form .btn-enviar input[type=submit] {
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
+}
+
+/*ESTILO DO RODAPE*/
+footer {
+  padding: 40px 4%;
+  background-color: #000000;
+  color: #ffffff;
+}
+footer .flex {
+  justify-content: space-between;
+}
+footer .line-footer {
+  padding: 20px 0;
+}
+.borda{
+  border-bottom: 2px solid #3ba1f4;
+}
+
+footer .line-footer p {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+footer .line-footer p i {
+  color: #3ba1f4;
+  font-size: 22px;
+}
+footer .line-footer p a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+footer .btn-social button {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
 }
